@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&family=Ysabeau+Infant&display=swap');
+:root {
+    --primary-color: #b1454a;
+    --background-color: #fff0de;
+    --text-color: #454545;
+    --text-font: 'Poppins', sans-serif;
+    --heading-font: 'Inter', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+  } 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+.header__nav {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .header__logo {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .header__logo-overlay {
+    position: absolute;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  
+    background-color: var(--primary-color);
+    z-index: -1;
+  }
+  .header__logo h4 {
+    color: #fff;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 500px;
+    font-family: var(--heading-font) ;
+
+  }
+.header__items {
+    padding: 20px;
+    flex: 1.236;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 65px;
+}
+.header__items li {
+    font-weight: 600;
+   font-family: var(--heading-font);
+   text-align: center;
+   font-size: 1rem;
+   list-style: none;
+}
+.header__items li a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .header__items img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  .hero {
+    display: flex;
+    min-height: calc(100vh-74px);
+    overflow: hidden;
+  }
+  .hero-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+  }
+  .hero-image img {
+    width: 120%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .hero-image-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+  }
+ .hero-image h2 {
+  font-family: var(--text-font);
+  font-size: 64px;
+  font-weight: 500;
+  bottom: 0;
+  padding: 20px;
+  color: #fff;
+ }
+.hero-content {
+flex: 1.22;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+.hero-content-info {
+  padding: 50px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-content-info h1 {
+  margin-left: 50px;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+.hero-content-info p {
+  margin: 32px 0 0 32px;
+  font-family: var(--text-font);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.hero-content__buttons {
+  margin: 40px 0 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.hero-content__order-button {
+  padding: 20px;
+  border-radius: 35px;
+  min-width: 200px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.hero-content__play-button {
+  border: none;
+  outline: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--text-color);
+  cursor: pointer;
+}
+.hero-content__play-button img {
+  margin-right: 12px;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+.hero-content__testimonial {
+  padding: 32px 64px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fff;
+}
+.hero-content__customers {
+  flex: 1;
+  gap: 30px;
+}
+.hero-content__customers h4 {
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 500;
+  font-family: var(--text-font);
+}
+.hero-content__customers p {
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 300;
+  font-family: var(--text-font);
+  opacity: 0.7;
+}
+.hero-content__reviews {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  border: 1px solid rgba(2,2,2,0.1);
+  min-width: 200px;
+}
+.hero-content__reviews img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.hero-content__reviews p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--text-color);
+  font-family: var(--text-font);
+  opacity: 0.8;
+}
+.about-us {
+  display: flex;
+  min-height: 720px;
+  overflow: hidden;
+}
+.about-us__image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  position: relative;
+}
+.about-us__image div {
+  padding: 32px 64px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about-us__image-sushi3 {
+   border-bottom: 8px solid var(--background-color);
+   background-image: url("./assets/about_bg1.png");
+}
+.about-us__image-sushi2 {
+  background-image: url("./assets/about_bg2.png");
+}
+.about-us__image-sushi3 img {
+  width: 225px;
+  height: 200px;
+}
+.about-us__image-sushi2 img {
+  width: 240px;
+  height: 160px;
+}
+.about-us__button {
+position: absolute;
+right: 0;
+padding: 12px 32px;
+min-height: 64px;
+background-color: var(--text-color);
+border-radius: 32px 0 0 32px;
+color: #fff;
+border: 0;
+outline: 0;
+font-family: var(--text-font);
+font-weight: 500;
+font-size: 18px;
+cursor: pointer;
+}
+.about-us__button img {
+  object-fit: contain;
+  margin-left: 32px;
+}
+.about-us__content {
+  top: -10px;
+  margin-top: 80px;
+  padding: 64px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.sushi__subtitle {
+  padding: 30px;
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.sushi__title {
+  font-family: var(--text-font);
+  font-size: 55px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: start;
+}
+.sushi__description {
+  padding: 20px;
+  font-family: var(--text-font);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+}
+.popular-foods {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  background-image: url(./assets/popular_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.popular-foods__title {
+  font-size: 60px;
+  font-family: var(--text-font);
+  font-weight: 700;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.popular-foods__filter {
+  margin-top: 48px;
+  max-width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.popular-foods__filter-btn {
+  padding: 10px 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 46px;
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+}
+.popular-foods__filter-btn img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.popular-foods__filter-btn.active {
+  background: #fff;
+  color: var(--primary-color);
+}
+.popular-foods__filter-btn:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
+.popular-foods__catalogue {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+.popular-foods__button {
+  width: fit-content;
+  padding: 20px 30px;
+  margin: 80px auto 0;
+  border-radius: 64px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  font-family: var(--text-font);
+  background-color: var(--text-color);
+  text-align: center;
+  color: #fff;
+}
+.popular-foods__button img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  margin-left: 21px;
+}
+.popular-foods__card {
+  padding: 35px;
+  min-width: 260px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.popular-foods__card-image {
+  width: 110px;
+  height: 84px;
+  object-fit: contain;
+}
+.popular-foods__card-title {
+  margin-top: 47px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--text-font);
+  color: #fff;
+  text-align: center;
+}
+.popular-foods__card-details {
+  width: 100%;
+  margin-top: 40px;
+}
+.popular-foods__card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.popular-foods__card-rating img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.popular-foods__card-rating p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: var(--text-font);
+  color: #fff;
+}
+.popular-foods__card-price {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--text-font);
+  color: #fff;
+}
+.popular-foods__card.active-card {
+  background: #fff;
+  min-width: 340px;
+}
+.popular-foods__card.active-card 
+.popular-foods__card-image {
+  width: 240px;
+  height: 160px;
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-title {
+  color: #1f1e31;
+  font-size: 32px;
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-rating img {
+  width: 32px;
+  height: 32px;
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-rating p {
+  font-size: 24px;
+  color: #888;
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-price {
+  font-size: 24px;
+  color: var(--text-color);
+}
+.trending {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.trending__discover {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 1;
+
+  width: 160px;
+  height: 160px;
+
+  border-radius: 100%;
+  background-color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending__discover p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--text-font);
+
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+.trending-sushi,
+.trending-drinks {
+  width: 100%;
+  min-height: 640px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.trending__content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 32px 64px;
+}
+.trending__list {
+  list-style: none;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trending__list li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+
+  min-width: 210px;
+}
+.trending__icon {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+.trending__icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.trending__list p {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.trending__image {
+  flex: 1;
+
+  position: relative;
+  padding: 32px 64px;
+
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.trending-sushi .trending__image {
+  background-image: url("./assets/japanese_sushi.png");
+}
+.trending-drink .trending__image {
+  background-image: url("./assets/japanese_drinks.png");
+}
+
+.trending__image img {
+  width: 254px;
+  height: 260px;
+  object-fit: contain;
+}
+
+/* Arrows */
+.trending__arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.trending__arrow img {
+  object-fit: contain;
+}
+.trending__arrow-left {
+  left: -2.5px;
+  top: 12%;
+}
+
+.trending__arrow-left img,
+.trending__arrow-top img {
+  width: auto;
+  height: 100%;
+}
+
+.trending__arrow-top {
+  top: -10.5px;
+  left: 12%;
+}
+
+.trending__arrow-bottom {
+  bottom: -6.5px;
+  right: 12%;
+}
+.trending__arrow-bottom img,
+.trending__arrow-right img {
+  width: 100%;
+  height: auto;
+}
+
+.trending__arrow-right {
+  right: -2.5px;
+  bottom: 12%;
+}
+
+.subscription {
+  padding: 64px;
+
+  background-color: var(--primary-color);
+  background-image: url('./assets/subscribe_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.subscription h2 {
+  font-size: 88px;
+  font-family: var(--text-font);
+  font-weight: 600;
+  line-height: 123px;
+
+  color: #fff;
+  text-align: center;
+}
+.subscription p {
+  font-size: 18px;
+  font-family: var(--text-font);
+  font-weight: 300;
+  line-height: 36px;
+
+  margin-top: 32px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subscription__form {
+  min-width: 480px;
+  margin-top: 40px;
+
+  padding: 14px 14px 14px 24px;
+
+  display: flex;
+  gap: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 46px;
+}
+.subscription__form input {
+  flex: 1;
+
+  font-size:  16px;
+  font-weight: 400px;
+  font-family: var(--text-font);
+
+  color: #fff;
+  opacity: 0.5;
+
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.subscription__form input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.subscription__form button {
+  padding: 20px;
+
+  min-width: 180px;
+
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--text-font);
+  color: #fff;
+  text-align: center;
+
+  background: #1f1e31;
+  border-radius: 46px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 40px;
+  background: #fff;
+
+  flex-wrap: wrap;
+  gap: 20px;
+
+  overflow: hidden;
+}
+
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  color: var(--text-color);
+
+  cursor: pointer;
+}
+
+.footer__logo span {
+  color: var(--primary-color)
+}
+
+.footer ul {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.footer ul:last-child {
+  gap: 32px;
+}
+
+.footer__nav li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  color: var(--text-color);
+
+  cursor: pointer;
+}
+
+.footer__social li {
+  width: 42px;
+  height: 42px;
+  background-color :#1f1e31;
+  border-radius: 100%;
+}
+
+.footer__social li img {
+  width: 30%;
+  height: 45%;
+  color: black;
+  object-fit: contain;
+}
+#mybtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #b1454a;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#mybtn:hover {
+  background-color: #555;
+}
